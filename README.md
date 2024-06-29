@@ -23,11 +23,12 @@ I needed this for a request to remove liens from a list of idle projects, that n
    python3 -m venv .venv
    source .venv/bin/activate
 2. Install Dependencies: Install the required Python packages:
+   ```bash
     pip install google-api-python-client
 
 3. GCP Authentication: Authenticate your session with GCP:
-
-gcloud auth application-default login
+   ```bash
+   gcloud auth application-default login
 
 GCP Permissions
 To successfully run this script, the executing account must have the following permissions in GCP:
@@ -38,10 +39,13 @@ resourcemanager.liens.delete
 These permissions are typically included in roles like Project Owner or Project IAM Admin. Ensure the account has appropriate roles assigned.
 
 Usage
-Update the project_ids list in main.py with the IDs of the projects you wish to check and potentially remove liens from. Run the script:
+Update the project_ids list in main.py with the IDs of the projects you wish to check and remove liens from.
 Uncomment line 34-35 if you wish to use the delete project function.
 
+Run the script:
+```bash
 python3 main.py
+```
 
 The script will log its operations, including liens found and deletions.
 
