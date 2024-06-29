@@ -40,6 +40,7 @@ These permissions are typically included in roles like Project Owner or Project 
 
 Usage
 Update the project_ids list in main.py with the IDs of the projects you wish to check and remove liens from.
+
 Uncomment line 34-35 if you wish to use the delete project function.
 
 Run the script:
@@ -58,4 +59,10 @@ Unit tests cover the following functionalities:
 
 List Liens: Test the retrieval of liens from a project to ensure the API call is correctly made and handled.
 Delete Liens: Test the deletion process of a lien to verify the API call is correctly executed and the response is handled appropriately.
+
+License
+This project is open-sourced under the MIT License.
+
+Disclaimer
+This tool is provided "as is", without warranty of any kind. Use of this tool is at your own risk. Always ensure you have appropriate backups and permissions before modifying project settings.
 
