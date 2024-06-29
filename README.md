@@ -24,8 +24,8 @@ I needed this for a request to remove liens from a list of idle projects, that n
    source .venv/bin/activate
 2. Install Dependencies: Install the required Python packages:
    ```bash
-    pip install google-api-python-client
-
+    pip install -r requirements.txt
+   
 3. GCP Authentication: Authenticate your session with GCP:
    ```bash
    gcloud auth application-default login
@@ -45,7 +45,7 @@ Uncomment line 34-35 if you wish to use the delete project function.
 
 Run the script:
 ```bash
-python3 main.py
+python main.py
 ```
 
 The script will log its operations, including liens found and deletions.
